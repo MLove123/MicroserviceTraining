@@ -1,10 +1,12 @@
 server:
-  port: 3030
+  port: 3034
   
 spring:
   application:
     name: driver-service
-      
+  config:
+     import: configserver:http://localhost:8888
+         
 eureka:
   client:
     fetch-registry: true
