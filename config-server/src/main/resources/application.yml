@@ -1,0 +1,12 @@
+server:
+  port: 8888
+  
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitlab.com/vatsanTraining/spring_microservices_training_outline.git
+          search-paths:
+          - '{application}'
